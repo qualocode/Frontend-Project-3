@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color_1: #3e4a59;
+  --color_2: #ffffff;
+  --color_3: #fecb00;
+  --color_4: #111111;
+  --color_5: #f5f7fa;
+  --font_1: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: var(--color_2);
+  font-family: var(--font_1);
+}
+
+/*------- H E A D E R -------*/
+
+.header {
+  width: 100%;
+  padding: 4% 8% 12rem 8%;
+  background-color: var(--color_1);
+}
+
+.header .heading {
+  padding-right: 20%;
+  font-size: 4rem;
+}
+
+.header .desc {
+  width: 26rem;
+  padding: 20px 0 30px 0;
+  font-size: 1rem;
+}
+
+.header div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.header div img {
+  width: 14rem;
+  object-fit: cover;
+}
+
+.header div .logo-desc {
+  font-size: 1rem;
+  color: var(--color_3);
+}
+
+/*---------- M A I N ----------*/
+
+.main {
+  width: 100%;
+  background-color: var(--color_2);
+}
+
+.main .mainImg {
+  width: 80%;
+  height: 20%;
+  margin: auto;
+  position: relative;
+  bottom: 130px;
+}
+
+.main .mainImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*----- Section # 1 & 2 -----*/
+
+.main .sct {
+  margin: 2rem 10% 20px 10%;
+  color: var(--color_4);
+}
+
+.sct-head h2 {
+  font-size: 3rem;
+  display: inline-block;
+  margin-right: 60px;
+  font-weight: 600;
+}
+
+.sct-head .hrz-line {
+  display: inline-block;
+  width: 150px;
+  height: 7px;
+  background: var(--color_3);
+  margin-bottom: 7px;
+}
+
+.sct .sct-body {
+  display: flex;
+  padding-top: 30px;
+  gap: 3rem;
+}
+
+/*------ Image Gallery ------*/
+
+.main .img-gallery {
+  width: 100%;
+  height: 100vh;
+  margin: 10% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main .img-gallery .img-1 {
+  width: 32%;
+  height: 100%;
+}
+
+.main .img-gallery .img-2 {
+  width: 66%;
+  height: 100%;
+}
+
+.main .img-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*----- Section # 2 -----*/
+
+.main .sct-two {
+  margin-top: 100px;
+}
+
+/*----- Section # 3 -----*/
+.main .sct-three {
+  width: 100%;
+  margin-top: 80px;
+  padding: 80px 10%;
+  color: var(--color_4);
+  background-color: var(--color_5);
+}
+
+.sct-three .gallery {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sct-three .gallery .gall-cards {
+  width: 33%;
+  height: 480px;
+  background-color: var(--color_2);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery .gall-cards img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.gallery .gall-cards p {
+  padding: 16px;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/*---------- F O O T E R ----------*/
+
+footer {
+  padding: 1rem;
+  background-color: var(--color_1);
+}
+
+footer p span {
+  color: var(--color_3);
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/*------------- R E S P O N S I V E  -------------*/
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+@media (max-width: 1040px) {
+  /*------- H E A D E R -------*/
+  .header .heading {
+    padding-right: 10%;
+  }
+
+  /*---------- M A I N ----------*/
+
+  /*----- Section # 1 -----*/
+}
+
+@media (max-width: 926px) {
+  /*------- H E A D E R -------*/
+  .header .heading {
+    padding-right: 0;
+  }
+
+  /*---------- M A I N ----------*/
+
+  /*----- Section # 3 -----*/
+  .sct-three .gallery {
+    flex-direction: column;
+  }
+
+  .sct-three .gallery .gall-cards {
+    width: 80%;
+  }
+}
+
+@media (max-width: 832px) {
+  /*------- H E A D E R -------*/
+  .header .heading {
+    font-size: 2.8rem;
+  }
+
+  /*---------- M A I N ----------*/
+
+  /*----- Section # 1 -----*/
+
+  .sct-head {
+    text-align: center;
+  }
+
+  .sct-head h2 {
+    display: block;
+    margin-right: 0;
+  }
+
+  .sct .sct-body {
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 630px) {
+  /*------- H E A D E R -------*/
+  .header div {
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /*---------- M A I N ----------*/
+
+  /*------ Image Gallery ------*/
+
+  .main .img-gallery {
+    flex-direction: column;
+    height: 140vh;
+  }
+
+  .main .img-gallery .img-1 {
+    height: 49%;
+    width: 100%;
+  }
+
+  .main .img-gallery .img-2 {
+    width: 100%;
+    height: 49%;
+  }
+
+  /*----- Section # 3 -----*/
+
+  .sct-three .gallery .gall-cards {
+    width: 100%;
+  }
+}
+
+@media (max-width: 583px) {
+  /*------- H E A D E R -------*/
+  .header .heading {
+    font-size: 2rem;
+  }
+
+  .header .desc {
+    width: 100%;
+    padding-right: 20%;
+    font-size: 0.8rem;
+  }
+
+  .header div .logo-desc {
+    font-size: 0.8rem;
+  }
+
+  /*---------- M A I N ----------*/
+
+  .main .mainImg {
+    height: 16%;
+  }
+
+  /*----- Section # 1 -----*/
+
+  .main .sct {
+    margin-top: 0;
+  }
+
+  .sct-head h2 {
+    font-size: 2rem;
+  }
+
+  .sct-head .hrz-line {
+    width: 80px;
+    height: 5px;
+  }
+
+  .sct .sct-body {
+    display: flex;
+    padding-top: 15px;
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  /*----- Section # 2 -----*/
+
+  .main .sct-two {
+    margin-top: 80px;
+  }
+
+  /*----- Section # 3 -----*/
+
+  .sct-three .gallery .gall-cards {
+    height: fit-content;
+  }
+
+  .gallery .gall-cards p {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+}
